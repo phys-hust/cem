@@ -1,3 +1,4 @@
 pytest
+yapf
 numpy
 matplotlib
