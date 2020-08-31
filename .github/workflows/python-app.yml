@@ -36,4 +36,4 @@ jobs:
         pytest
     - name: Format with yapf
       run: |
-        yapf -prd cem
+        yapf -prdv .
