@@ -1,6 +1,6 @@
 #######################################################
 # Author: Qixin Hu
-# Email:  hqx11@hust.eud.cn
+# Email:  hqx11@hust.edu.cn
 # Version: 1.0
 #######################################################
 # The backends contain Numpy and CuPy(optional).
@@ -82,6 +82,7 @@ class NumpyBackend(Backend):
     exp = staticmethod(numpy.exp)
     sin = staticmethod(numpy.sin)
     cos = staticmethod(numpy.cos)
+    sqrt = staticmethod(numpy.sqrt)
 
     # Create array
     # you can add more if needed
@@ -118,6 +119,7 @@ if CUPY_AVAILABLE:
         exp = staticmethod(cupy.exp)
         sin = staticmethod(cupy.sin)
         cos = staticmethod(cupy.cos)
+        sqrt = staticmethod(cupy.sqrt)
 
         # Create array
         array = staticmethod(cupy.array)
